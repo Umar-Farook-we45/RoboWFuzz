@@ -3,6 +3,7 @@ robowfuzz/*.json
 robowfuzz/*.html
 robowfuzz/*.xml
 robowfuzz/*.txt
+dist/
 
 
 
