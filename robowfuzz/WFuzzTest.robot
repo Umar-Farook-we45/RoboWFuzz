@@ -1,7 +1,7 @@
 *** Settings ***
-Library  RoboWFuzz  lists/directory-list-1.0.txt
+Library  /Users/abhaybhargav/Documents/Code/Python/RoboWFuzz/robowfuzz/RoboWFuzz.py  /Users/abhaybhargav/Documents/Code/Python/RoboWFuzz/lists/directory-list-1.0.txt
 
 *** Test Cases ***
 Directory Bruter
-    [Timeout]  15 minutes
+    [Timeout]  20 seconds
     brute_directories  http://testphp.vulnweb.com/FUZZ  concur=6  follow=True
