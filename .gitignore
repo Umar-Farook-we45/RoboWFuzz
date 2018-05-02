@@ -4,7 +4,4 @@ robowfuzz/*.html
 robowfuzz/*.xml
 robowfuzz/*.txt
 dist/
-
-
-
-
+robowfuzz/RoboWFuzz.egg-info/*

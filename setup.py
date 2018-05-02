@@ -10,7 +10,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='RoboWFuzz',
-    version='1.0',
+    version='1.1',
     packages=[''],
     package_dir={'': 'robowfuzz'},
     url='',
