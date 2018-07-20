@@ -1,7 +1,10 @@
 *** Settings ***
-Library  /Users/abhaybhargav/Documents/Code/Python/RoboWFuzz/robowfuzz/RoboWFuzz.py  /Users/abhaybhargav/Documents/Code/Python/RoboWFuzz/lists/directory-list-1.0.txt
+Library  RoboWFuzz  /home/umar/Desktop/ThreadPlayBook-Dev/Tools/RoboWFuzz-master/lists/directory-list-2.3-small.txt
+
+*** Variable ***
+${REPORT}   /home/umar/Desktop/ThreadPlayBook-Dev/Tools/RoboWFuzz-master/report_nikto.json
 
 *** Test Cases ***
 Directory Bruter
-    [Timeout]  20 seconds
-    brute_directories  http://testphp.vulnweb.com/FUZZ  concur=6  follow=True
+    [Timeout]  3 minutes
+    brute_directories  http://104.236.85.150/FUZZ   6    ${REPORT}  json   False
